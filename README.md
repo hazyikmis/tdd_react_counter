@@ -10,11 +10,15 @@ You can always check, what is assigned to the wrapper with
 
 > console.log(wrapper.debug());
 
-> import { shallow, mount } from "enzyme";
-> describe("Counter Testing", () => {
-> let wrapper;
-> beforeEach(() => {
-> //wrapper = shallow(<Counter />);
-> wrapper = mount(<App />);
-> //console.log(wrapper.debug());
-> });
+```
+import { shallow, mount } from "enzyme";
+describe("Counter Testing", () => {
+  let wrapper;
+  beforeEach(() => {
+    //wrapper = shallow(<Counter />);
+    wrapper = mount(<App />);
+    //console.log(wrapper.debug());
+  })
+
+  test("...", () => {});
+```
