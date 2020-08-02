@@ -4,9 +4,9 @@ https://www.youtube.com/watch?v=-bmdf1oATQo
 
 > npm install --save-dev jest babel-jest @babel/preset-env @babel/preset-react react-test-renderer
 
-To test shallow rendering; without not deep diving into components use "shallow"
-To test full dom rendering; with deep diving into components use "mount"
-You can always check, what is assigned to the wrapper with
+- To test shallow rendering; without not deep diving into components use "shallow"
+- To test full dom rendering; with deep diving into components use "mount"
+- You can always check, what is assigned to the wrapper with
 
 > console.log(wrapper.debug());
 
@@ -21,4 +21,5 @@ describe("Counter Testing", () => {
   })
 
   test("...", () => {});
+})
 ```
