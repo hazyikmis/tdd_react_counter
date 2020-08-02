@@ -1,10 +1,10 @@
 import React from "react";
 import { render } from "@testing-library/react";
-//import App from "./App";
+import App from "./App";
 
 import Counter from "./Counter";
 
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 /*
 //The part below moved to setupTest.js
 //So, no need to configure Enzyme in every test
@@ -19,7 +19,8 @@ Enzyme.configure({ adapter: new Adapter() });
 describe("Counter Testing", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<Counter />);
+    //wrapper = shallow(<Counter />);
+    wrapper = mount(<App />);
   });
 
   /*
